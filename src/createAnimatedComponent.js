@@ -36,7 +36,7 @@ export default function createAnimatedComponent(Component) {
       this._component.setNativeProps(props);
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
       this._attachProps(this.props);
     }
 
